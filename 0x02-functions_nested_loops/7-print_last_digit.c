@@ -1,15 +1,20 @@
 #include "main.h"
 
 /**
- * print_last_digit - prints the last digit of a number
- * @n: the int to extract the last digit from
- * Return: value of the last digit
+ * print_last_digit - Prints the last digit of a number
+ * @n: The number
+ *
+ * Return: The value of the last digit
  */
 int print_last_digit(int n)
 {
-	int a = 0;
+    int last_digit;
 
-	a = n % 10;
-	_putchar(a + '0');
-	return (a);
+    if (n < 0)
+        n = -n; /* Convert negative number to positive */
+
+    last_digit = n % 10; /* Get the remainder when divided by 10 */
+
+    _putchar('0' + last_digit); /* Print the digit */
+    return last_digit;
 }
