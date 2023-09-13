@@ -65,19 +65,19 @@ int _strlen(char *s)
 	{
 		c++;
 	}
-OBOBOB
+
 	return (c);
 }
 
 /**
-OBOBOB * _strcpy - Copy a string
+ * _strcpy - Copy a string
  * @dest: Destination value
-OBOBOB * @src: Source value
+ * @src: Source value
  *
  * Return: the pointer to dest
  */
 char *_strcpy(char *dest, char *src)
-OBOBOB{
+{
 	int i;
 
 	for (i = 0; src[i] != '\0'; i++)
